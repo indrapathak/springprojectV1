@@ -22,6 +22,11 @@ public class NodeDataController {
 	@Autowired
 	public NodeService nodeDataService;
 
+	@GetMapping("/")
+	public String appStart() {
+		return "WELCOME TO THE NEW SPRING BOOT APP";
+	}
+
 	@GetMapping("/getAllData")
 	public List<NodeData> getAll() {
 
