@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,16 @@ public class NodeDataController {
 	@GetMapping("/")
 	public String appStart() {
 		return "WELCOME TO THE NEW SPRING BOOT APP";
+	}
+
+	// Taking Input from url of the request
+	@GetMapping("/getByNodeId/{nodeId}")
+	public List<NodeData> getDataByNodeId(@PathVariable("nodeId") String nodeId) {
+		List<NodeData> data = nodeDataService.getListByNodeId(nodeId);
+		System.out.print("The data that is recieved from the query is " + data);
+
+		return data;
+
 	}
 
 	@GetMapping("/getAllData")
