@@ -10,15 +10,6 @@ public class InputParameters {
 	private int pf;
 	private int OEE;
 	private int frequecy;
-	String company;
-
-	public String getCompany() {
-		return company;
-	}
-
-	public void setCompany(String company) {
-		this.company = company;
-	}
 
 	private LocalDateTime timestamp;
 

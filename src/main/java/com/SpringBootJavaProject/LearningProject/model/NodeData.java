@@ -1,7 +1,5 @@
 package com.SpringBootJavaProject.LearningProject.model;
 
-import java.time.LocalDateTime;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -10,8 +8,7 @@ public class NodeData {
 	@Id
 	String id;
 	String nodeId;
-	String company;
-	LocalDateTime timestamp;
+
 	int current;
 	int voltage;
 	int pf;
@@ -25,24 +22,7 @@ public class NodeData {
 		this.OEE = OEE;
 		this.pf = pf;
 		this.nodeId = nodeId;
-		this.company = company;
-		this.timestamp = LocalDateTime.now();
-	}
 
-	public String getCompany() {
-		return company;
-	}
-
-	public void setCompany(String company) {
-		this.company = company;
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
 	}
 
 	public String getNodeId() {
