@@ -45,20 +45,12 @@ public class InputParameters {
 		OEE = this.OEE;
 	}
 
-	public int getFrequecy() {
-		return frequecy;
+	public int getFrequency() {
+		return frequency;
 	}
 
-	public void setFrequecy(int frequecy) {
-		this.frequecy = frequecy;
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
+	public void setFrequency(int frequency) {
+		this.frequency = frequency;
 	}
 
 	public String getNodeIdValue() {
