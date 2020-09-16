@@ -9,7 +9,7 @@ public class InputParameters {
 	private int voltage;
 	private int pf;
 	private int OEE;
-	private int frequecy;
+	private int frequency;
 
 	private LocalDateTime timestamp;
 
