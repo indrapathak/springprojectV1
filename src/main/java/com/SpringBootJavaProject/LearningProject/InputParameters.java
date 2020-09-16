@@ -9,7 +9,7 @@ public class InputParameters {
 	private int voltage;
 	private int pf;
 	private int OEE;
-	private int frequency;
+	private int frequecy;
 
 	private LocalDateTime timestamp;
 
@@ -45,12 +45,20 @@ public class InputParameters {
 		OEE = this.OEE;
 	}
 
-	public int getFrequency() {
-		return frequency;
+	public int getFrequecy() {
+		return frequecy;
 	}
 
-	public void setFrequency(int frequency) {
-		this.frequency = frequency;
+	public void setFrequecy(int frequecy) {
+		this.frequecy = frequecy;
+	}
+
+	public LocalDateTime getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(LocalDateTime timestamp) {
+		this.timestamp = timestamp;
 	}
 
 	public String getNodeIdValue() {
