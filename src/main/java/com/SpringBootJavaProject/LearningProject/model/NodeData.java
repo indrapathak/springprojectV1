@@ -8,7 +8,6 @@ public class NodeData {
 	@Id
 	String id;
 	String nodeId;
-
 	int current;
 	int voltage;
 	int pf;
