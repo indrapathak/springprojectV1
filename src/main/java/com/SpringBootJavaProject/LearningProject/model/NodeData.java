@@ -15,7 +15,7 @@ public class NodeData {
 	int OEE;
 	int frequency;
 
-	public NodeData(int current, int voltage, int pf, int OEE, int frequecy, String nodeId) {
+	public NodeData(int current, int voltage, int pf, int OEE, int frequency, String nodeId) {
 		this.current = current;
 		this.voltage = voltage;
 		this.frequency = frequency;
