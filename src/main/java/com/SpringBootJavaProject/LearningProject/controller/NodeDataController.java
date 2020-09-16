@@ -82,7 +82,7 @@ public class NodeDataController {
 	@PostMapping("/addNewData")
 	@ResponseStatus(HttpStatus.CREATED)
 	public NodeData addNewData(@RequestBody NodeData dataValues) {
-		System.out.println(" current is " + dataValues.getFrequecy() + " voltage is " + dataValues.getVoltage());
+
 		return nodeDataService.addNew(dataValues);
 	}
 
