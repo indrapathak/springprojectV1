@@ -25,7 +25,6 @@ public class NodeDataController {
 
 	@GetMapping("/")
 	public String appStart() {
-		List<NodeData> data = nodeDataService.getAll();
 
 		return "WELCOME TO THE NEW SPRING BOOT APP";
 	}
