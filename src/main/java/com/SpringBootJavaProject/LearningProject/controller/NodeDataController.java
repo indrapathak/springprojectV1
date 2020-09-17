@@ -43,11 +43,6 @@ public class NodeDataController {
 	public List<NodeData> getAll() {
 
 		List<NodeData> data = nodeDataService.getAll();
-//		List<NodeData> nullData = null;
-//
-//		if (data == null) {
-//			return nullData;
-//		}
 		return data;
 	}
 
