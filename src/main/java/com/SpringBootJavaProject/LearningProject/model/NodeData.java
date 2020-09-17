@@ -12,12 +12,12 @@ public class NodeData {
 	int voltage;
 	int pf;
 	int OEE;
-//	int frequecy;
+	int frequecy;
 
 	public NodeData(int current, int voltage, int pf, int OEE, int frequecy, String nodeId) {
 		this.current = current;
 		this.voltage = voltage;
-		// this.frequecy = frequecy;
+		this.frequecy = frequecy;
 		this.OEE = OEE;
 		this.pf = pf;
 		this.nodeId = nodeId;
@@ -72,11 +72,11 @@ public class NodeData {
 		OEE = this.OEE;
 	}
 
-//	public int getFrequecy() {
-//		return frequecy;
-//	}
-//
-//	public void setFrequecy(int frequecy) {
-//		this.frequecy = frequecy;
-//	}
+	public int getFrequecy() {
+		return frequecy;
+	}
+
+	public void setFrequecy(int frequecy) {
+		this.frequecy = frequecy;
+	}
 }
