@@ -9,7 +9,7 @@ public class InputParameters {
 	private int voltage;
 	private int pf;
 	private int OEE;
-	private int frequecy;
+	// private int frequecy;
 
 	private LocalDateTime timestamp;
 
@@ -45,13 +45,13 @@ public class InputParameters {
 		OEE = this.OEE;
 	}
 
-	public int getFrequecy() {
-		return frequecy;
-	}
-
-	public void setFrequecy(int frequecy) {
-		this.frequecy = frequecy;
-	}
+//	public int getFrequecy() {
+//		return frequecy;
+//	}
+//
+//	public void setFrequecy(int frequecy) {
+//		this.frequecy = frequecy;
+//	}
 
 	public LocalDateTime getTimestamp() {
 		return timestamp;
