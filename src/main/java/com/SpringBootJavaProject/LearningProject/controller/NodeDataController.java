@@ -19,12 +19,11 @@ import com.SpringBootJavaProject.LearningProject.model.NodeData;
 import com.SpringBootJavaProject.LearningProject.service.NodeService;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class NodeDataController {
 
 	@Autowired
 	public NodeService nodeDataService;
-
-	@CrossOrigin(origins = "https://springnewap.herokuapp.com/")
 
 	@GetMapping("/")
 	public String appStart() {
@@ -43,8 +42,9 @@ public class NodeDataController {
 	}
 
 	@GetMapping("/getAllData")
-	public List<NodeData> getAll() {
 
+	public List<NodeData> getAll() {
+		System.out.println("We are inside getAllData function ");
 		List<NodeData> data = nodeDataService.getAll();
 		return data;
 	}
@@ -66,16 +66,15 @@ public class NodeDataController {
 		return data;
 	}
 
-//	// Aggregattion API of getting Details  NOT WORKING NEED TO BE CHANGED
-//	@RequestMapping(path = "/AggregatedData", method = RequestMethod.GET)
-//	public List<NodeData> getAggregatedData(@RequestBody InputParameters inputParams) {
-//
-//		String nodeId = inputParams.getNodeIdValue();
-//		List<NodeData> data = nodeDataService.getAggregatedDataValues(nodeId);
-//
-//
-//		return data;
-//	}
+	// Aggregattion API of getting Details NOT WORKING NEED TO BE CHANGED
+	@RequestMapping(path = "/AggregatedData", method = RequestMethod.GET)
+	public List<NodeData> getAggregatedData(@RequestBody InputParameters inputParams) {
+
+		String nodeId = inputParams.getNodeIdValue();
+		List<NodeData> data = nodeDataService.getAggregatedDataValues(nodeId);
+
+		return data;
+	}
 
 	@PostMapping("/addNewData")
 	@ResponseStatus(HttpStatus.CREATED)
