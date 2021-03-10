@@ -8,6 +8,6 @@ public interface QueryInterfaceRepository {
 
 	List<NodeData> findByQueryObject(String nodeId);
 
-	// List<NodeData> AggregationQuery(String nodeId);
+	List<NodeData> AggregationQuery(String nodeId);
 
 }

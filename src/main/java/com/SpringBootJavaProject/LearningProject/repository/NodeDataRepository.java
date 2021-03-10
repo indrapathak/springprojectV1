@@ -21,9 +21,10 @@ public interface NodeDataRepository extends MongoRepository<NodeData, String>, Q
 
 	public List<NodeData> findListByNodeId(String nodeId);
 
-////	@Override
-////	List<NodeData> findByQueryObject(String nodeId);
-//
+//	@Override
+//	List<NodeData> findByQueryObject(String nodeId);
+
+//	@Override
 //	public List<NodeData> findByQueryObject(String nodeId) {
 //
 ////		Query query = new Query(Criteria.where("nodeId").is(nodeId));

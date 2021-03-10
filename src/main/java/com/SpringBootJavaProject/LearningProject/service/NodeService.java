@@ -47,9 +47,9 @@ public class NodeService {
 		return nodeRepository.findByQueryObject(nodeId);
 	}
 
-//	public List<NodeData> getAggregatedDataValues(String nodeId) {
-//
-//		return nodeRepository.AggregationQuery(nodeId);
-//	}
+	public List<NodeData> getAggregatedDataValues(String nodeId) {
+
+		return nodeRepository.AggregationQuery(nodeId);
+	}
 
 }
